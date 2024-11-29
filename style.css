@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+
+:root {
+
+    --preto: #000;
+    --vermelhao: #8B0000;
+    --vermelhoclaro: #E57373;
+    --branco: #F5F5F5;
+    --cinzaEscuro: #1C1C1C;
+    --cinza: #4F4F4F;
+    --prata: #DCDCDC;
+
+
+    --fontBody: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fontBody);
+}
+
+header {
+    background-color: var(--vermelhao);
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    height: 20vh;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+header h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+footer {
+    background-color: var(--vermelhao);
+    color: var(--branco);
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+main {
+    height: 75vh;
+    background-color: var(--prata);
+    color: var(--preto);
+    display: flex;
+    margin: auto;
+}
+
+.imc {
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    width: 30%;
+    border: 5px solid var(--vermelhao);
+    margin: auto;
+    box-shadow: 5px 5px 5px var(--cinzaEscuro);
+}
+
+.formulario {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: first baseline;
+}
+
+
+.formulario h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+
+.campo label {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+
+.campo input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid var(--vermelhoclaro);
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: var(--vermelhoclaro);
+    transition: all 0.5s ease;
+}
+
+
+input::placeholder {
+    color: var(--vermelhoclaro);
+}
+
+
+.campo input:focus {
+    background-color: transparent;
+    border: 2px solid var(--vermelhao);
+    padding-left: 10px;
+    color: var(--vermelhao);
+}
+
+
+.formulario button {
+    background-color: var(--branco);
+    color: var(--vermelhoclaro);
+    border: 2px solid var(--vermelhoclaro);
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    font-size: 1.3rem;
+    transition: all 1s ease;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: var(--vermelhao);
+    color: var(--branco);
+}
